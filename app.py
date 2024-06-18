@@ -10,8 +10,8 @@ def load_lottieurl(url):
     if r.status_code !=200:
         return None
     return r.json()
-def local_css(file name):
-    with open(file name) as f:
+def local_css(style.css):
+    with open(style.css) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 local_css("style.css")
 lottie_coding=load_lottieurl("https://lottie.host/2b0613fd-45e5-44c3-997b-803825927a32/OzbOsRiVZh.json")
